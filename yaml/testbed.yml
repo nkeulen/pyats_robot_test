@@ -1,0 +1,27 @@
+devices:
+  csr1:
+    connections:
+      cli:
+        ip: 10.0.100.8
+        protocol: ssh
+    credentials:
+      default:
+        password: '%ENV{LAB_PASSWORD}'
+        username: labuser
+      enable:
+        password: '%ENV{LAB_PASSWORD}'
+    os: iosxe
+    type: iosxe
+  xrv1:
+    connections:
+      cli:
+        ip: 10.0.100.2
+        protocol: ssh
+    credentials:
+      default:
+        password: '%ENV{LAB_PASSWORD}'
+        username: labuser
+      enable:
+        password: '%ENV{LAB_PASSWORD}'
+    os: iosxr
+    type: iosxr
